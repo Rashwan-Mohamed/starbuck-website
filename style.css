@@ -44,7 +44,7 @@ button {
   align-items: center;
   height: 70px;
   background: white;
-  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  box-shadow: 0px 4px 2px 0px rgba(0, 0, 0, 0.25);
   z-index: 2;
   position: relative;
 }
@@ -220,8 +220,7 @@ a {
 .second,
 .third,
 .fourth,
-.fifth,
-.sixth {
+.fiftho {
   display: grid;
   height: 100%;
 }
@@ -261,6 +260,7 @@ a {
   font-family: "Rubik";
   margin: 1rem auto 1rem auto;
   font-weight: 550;
+  transition: all 0.2s ease-in-out;
 }
 
 .second {
@@ -313,7 +313,7 @@ a {
 }
 
 .fourth {
-  background-color: rgb(238, 228, 214);
+  background-color: rgba(235, 208, 171, 0.76);
   margin-bottom: 2rem;
   text-align: center;
 }
@@ -324,7 +324,7 @@ a {
 
 .goodday h1 {
   letter-spacing: 5px;
-  color: rgb(19, 19, 22);
+  color: rgb(48, 63, 51);
   width: 300px;
   margin: 0.25rem auto 1.5rem auto;
   font-size: 27px;
@@ -333,6 +333,7 @@ a {
 .goodday p {
   font-size: 23px;
   margin-bottom: 1.7rem;
+  color: rgb(48, 63, 51);
 }
 
 .fall {
@@ -553,7 +554,9 @@ ul {
 .icons a:hover {
   text-decoration: underline;
 }
-
+.learn:hover {
+  text-decoration: none;
+}
 .icons p {
   font-size: 13px;
   color: #161616c9;
@@ -562,4 +565,348 @@ ul {
 
 .iver {
   overflow: hidden !important;
+}
+
+.die {
+  visibility: hidden;
+  display: none;
+  margin: 0;
+  padding: 0;
+  height: 0;
+  width: 0;
+  overflow: hidden;
+}
+.fa-map-marker-alt {
+  margin-right: 0.7rem;
+}
+.logic {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+@media screen and (min-width: 773px) {
+  .mmenu {
+    visibility: hidden;
+    display: none;
+    margin: 0;
+    padding: 0;
+    height: 0;
+    width: 0;
+    overflow: hidden;
+  }
+  .logic {
+    visibility: hidden;
+    display: none;
+    margin: 0;
+    padding: 0;
+    height: 0;
+    width: 0;
+    overflow: hidden;
+  }
+  .die {
+    visibility: visible;
+    display: block;
+    margin: inherit;
+    padding: inherit;
+    height: auto;
+    width: auto;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    border: none;
+  }
+  .arrow {
+    display: flex;
+    flex-direction: row;
+    border: none;
+    margin-left: 1.5rem;
+  }
+  .reward {
+    border: none;
+  }
+  .navbar {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    box-shadow: none;
+    padding: 0.25rem 1rem;
+    height: 90px;
+    box-shadow: 0px 4px 2px 0px rgba(0, 0, 0, 0.25);
+  }
+  .logo {
+    margin: 0;
+    padding: 0;
+    width: 50px;
+    height: 50px;
+  }
+  .arian {
+    padding: 0;
+    margin: 0;
+    padding-right: 1rem;
+    /* margin: 0; */
+    font-size: 25px;
+    text-transform: capitalize;
+    font-weight: 1000 !important;
+  }
+  .arian > a {
+    font-size: 15px;
+    font-weight: 1000 !important;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    transition: all 0.2s ease-in-out;
+  }
+  .arian a:hover {
+    color: #069972;
+  }
+  .signbtn {
+    margin: 0 0.25rem;
+    padding: 0.3rem 0.7rem;
+    font-size: 16px;
+    transition: all 0.2s ease-in-out;
+  }
+  .sign {
+    padding: 0;
+    margin: 0;
+    margin-left: 1.5rem;
+  }
+  .store {
+    font-size: 16px;
+    transition: all 0.1s ease-in-out;
+  }
+  .store:hover {
+    color: #069972;
+  }
+  .fa-map-marker-alt {
+    font-size: 16px;
+  }
+  .up:hover {
+    background-color: rgba(0, 0, 0, 0.164);
+    transition: all 0.2s ease-in-out;
+  }
+  .join:hover {
+    background-color: rgb(95, 93, 93);
+    transition: all 0.2s ease-in-out;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .guidence,
+  .wrapper,
+  footer {
+    margin-right: 14.5rem !important;
+    margin-left: 14.5rem !important;
+  }
+  .navbar {
+    padding-left: 6.5rem;
+    padding-right: 6.5rem;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .first,
+  .second,
+  .third,
+  .fourth {
+    /* display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center; */
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .toghether {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .toghether h3 {
+    font-size: 53px !important;
+    width: auto !important;
+  }
+  .toghether p {
+    font-size: 24px;
+    padding: 0.5rem 2rem;
+  }
+  .exp {
+    border: 1.75px solid black;
+    font-weight: 600;
+  }
+  .second {
+    position: relative;
+  }
+  .eight-onee {
+    z-index: 2;
+    position: relative;
+    left: 100%;
+  }
+
+  .prize {
+    z-index: 2;
+    position: relative;
+    left: -100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 3rem;
+    padding-bottom: 3rem;
+  }
+
+  .prize h3 {
+    font-size: 55px;
+    /* width: 450px; */
+    margin-bottom: 0;
+    padding-bottom: 0;
+  }
+  .prize p {
+    margin: auto !important;
+    padding: 0 !important;
+    /* width: 450px; */
+    margin: auto;
+    font-size: 23px;
+    font-weight: 580;
+  }
+
+  .ply {
+    border: 1px solid white;
+  }
+  .unidos {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 425px;
+    margin: 1.5rem auto 1.5rem auto;
+  }
+  .unidos p {
+    font-size: 19px;
+    line-height: 2;
+    font-weight: 500;
+  }
+  .out {
+    border: 1.25px solid black;
+  }
+  .goodday {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 400px;
+    margin: 2rem auto;
+  }
+  .goodday h1 {
+    font-size: 53px;
+    width: 400px;
+    line-height: 1.25;
+    letter-spacing: 5px;
+  }
+  .goodday p {
+    font-size: 26px;
+  }
+
+  .fifth h3 {
+    font-size: 23px;
+    letter-spacing: 1px;
+    margin-bottom: 0.7rem;
+  }
+  .fifth p {
+    /* width: 520px; */
+    font-size: 20px;
+    margin: 0.25rem auto;
+    margin-top: 0;
+    line-height: 2;
+  }
+  .more {
+    padding: 0.18rem 1.25rem;
+    letter-spacing: 1.5px;
+  }
+  .fiftho {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 2rem;
+  }
+  .griddo {
+    display: flex;
+    flex-direction: column;
+  }
+  .sixth h3 {
+    font-size: 22px;
+    letter-spacing: 1.5px;
+    margin: 0.5rem auto;
+  }
+  .sixth p {
+    font-size: 19px;
+    width: 490px;
+    margin: 0.2rem auto;
+  }
+  .ops {
+    font-size: 15px;
+    text-transform: capitalize;
+  }
+  .no {
+    width: 680px;
+    margin: 4rem auto 0.2rem auto;
+    padding-bottom: 0;
+    font-size: 1.000001em;
+  }
+  .cero {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: auto;
+  }
+  .cero li {
+    grid-row: 1;
+  }
+  .chev {
+    height: 0;
+    width: 0;
+    padding: 0;
+    margin: 0;
+    display: none;
+    visibility: hidden;
+  }
+  .business {
+    cursor: auto !important;
+    text-transform: capitalize !important;
+    font-size: 20px !important;
+    margin-right: 0.5rem !important;
+  }
+  .chain {
+    display: flex;
+  }
+  .chain li {
+    padding-right: 0.8rem;
+    margin-right: 0.8rem;
+    border-right: 1.5px solid black;
+  }
+  .except {
+    border: none !important;
+  }
+
+  .cero a {
+    font-size: 14px !important;
+    font-weight: 300;
+    transition: none !important;
+  }
+  .cero a:hover {
+    color: black;
+  }
+  .social i {
+    transition: all 0.2s ease-in-out;
+  }
+  .social i:hover {
+    box-shadow: 0px 0px 5px 3px rgba(0, 0, 0, 0.43);
+  }
+}
+
+.upp:hover {
+  background-color: rgba(0, 0, 0, 0.082);
+  transition: all 0.2s ease-in-out;
+}
+.joinn:hover {
+  background-color: rgba(255, 255, 255, 0.11);
+  transition: all 0.2s ease-in-out;
 }

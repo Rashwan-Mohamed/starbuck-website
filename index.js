@@ -4,7 +4,7 @@ const real = document.querySelector(".menu");
 
 const chev = document.querySelectorAll(".chev");
 
-const ceroli = document.querySelectorAll(".cero li");
+const ceroli = document.querySelectorAll(".business");
 
 const togl = document.querySelector(".toggle");
 
@@ -15,7 +15,6 @@ const hedo = document.querySelector(".hedo");
 const nody=document.querySelector('body');
 
 real.addEventListener("click", () => {
-  console.log("ok");
   sec.classList.toggle("disable");
   flow();
 });
@@ -28,7 +27,6 @@ menu.addEventListener("click", () => {
     sec.classList.add("disable");
   }
 flow();
-  console.log("okkkk");
 });
 
 
@@ -57,13 +55,63 @@ else{
 
 ceroli.forEach((item) => {
   item.addEventListener("click", (e) => {
+if(screen.width<768){
+
     e.currentTarget.querySelector(".chev").classList.toggle("rot");
     e.currentTarget.nextElementSibling.classList.toggle("nohight");
+}
+
   });
 });
 
+window.addEventListener('load',()=>{
+
+if(screen.width>767){
+
+ceroli.forEach((e)=>{
 
 
+    e.nextElementSibling.classList.remove("nohight");
+
+})
+
+}
+
+else{
+    e.nextElementSibling.classList.add("nohight");
+}
+
+})
+
+window.addEventListener('resize',()=>{
+
+if(screen.width>767){
+
+ceroli.forEach((e)=>{
+
+
+    e.nextElementSibling.classList.remove("nohight");
+
+})
+
+}
+
+else{
+
+    ceroli.forEach((e)=>{
+
+
+     e.nextElementSibling.classList.add("nohight");
+
+})
+   
+
+
+}
+
+
+    
+})
 
 
 
